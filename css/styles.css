@@ -1,0 +1,579 @@
+/* =========================================================
+   Stylesheet file: styles.css
+   ---------------------------------------------------------
+   Software Development Bootcamp Course
+   Assignment # 1: Personal Website
+   ---------------------------------------------------------
+   Student: Mohsen Ghazel
+   Professional Digital Portfolio 
+   =========================================================
+   Structure:
+   ---------------------------------------------------------
+   Part 1  : Global Variables
+   Part 2  : Header
+   Part 3  : Navigation
+   Part 4  : Main Body
+             4.1 Typography
+             4.2 Layout Containers
+             4.3 Sections
+             4.4 Components
+             4.5: Tables
+             4.6 Forms
+             4.7 Utilities
+   Part 5  : Footer
+   Part 6  : Media Responsiveness
+   ========================================================= */
+
+/* =========================================================
+   Part 1: GLOBAL VARIABLES
+   ========================================================= */
+
+/* --- Universal Reset --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0; 
+}
+
+/* --- Root Design Tokens --- */
+:root {
+    --primary-color: #2008f7;
+    --accent-color: #0671f4;
+    --background-color: #cefad0;
+    --text-color: #060606;
+    --white-color: #ffffff;
+    --border-color: #dddddd;
+    --danger-color: #dc3545;
+}
+
+/* --- Global HTML Behavior --- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Base Body --- */
+body {
+    /*  TYPOGRAPHY WITH GOOGLE FONTS */
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+
+    /* Horizontal left/right margin-spacing */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* --- Responsive Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   Part 2: HEADER
+   ========================================================= */
+
+/* Container holding intro text + photo */
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+    gap: 40px;
+    flex-wrap: nowrap;         
+}
+
+/* Intro text block */
+.intro-text {
+    flex: 1;                  
+}
+
+/* Profile photo aligned right */
+.intro-photo {
+    width: 220px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    flex-shrink: 0;            
+}
+
+/* =========================================================
+   Part 3: NAVIGATION
+   ========================================================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Anchors/links style  */
+nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+/* Active page highlight */
+nav a.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+/* =========================================================
+   Part 4: MAIN BODY
+   ========================================================= */
+/* ---------------------------------------------------------
+   4.1 TYPOGRAPHY
+   --------------------------------------------------------- */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    /* TYPOGRAPHY WITH GOOGLE FONTS */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Ordered/un-ordered lists */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+li {
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------------
+   4.2 LAYOUT CONTAINERS
+   --------------------------------------------------------- */
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    padding: 30px;
+
+    background: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   4.3 SECTIONS
+   --------------------------------------------------------- */
+
+/* Section */
+.section {
+    padding: 40px 0;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card */
+.project-card {
+    background: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease;
+}
+
+/* Project Card */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------------------------------------------------------
+   4.4 COMPONENTS
+   --------------------------------------------------------- */
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* ---------------------------------------------------------
+   4.5 TABLES
+   --------------------------------------------------------- */
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;  
+    margin: 30px 0;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.modern-table thead tr {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.modern-table th {
+    padding: 16px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255,255,255,0.2); 
+}
+
+/* Body Cells */
+.modern-table td {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    border: 1px solid #677aa0; 
+}
+
+/* Zebra striping */
+.modern-table tbody tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+/* Row hover */
+.modern-table tbody tr:hover {
+    background-color: #eef3ff;
+    transition: background 0.2s ease;
+}
+
+/* Improve links inside table */
+.modern-table td a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.modern-table td a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------------
+   4.6 FORMS
+   --------------------------------------------------------- */
+   /* Note: I used Bootstrap Forms Styles utilities for my Contact Form 
+            - See: contact.html
+    */
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Form title spacing */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Label styling */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Input + Textarea styling */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #d8dee9;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #f9fbff;
+}
+
+/* Focus state */
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(6, 113, 244, 0.15);
+}
+
+/* Textarea resizing control */
+.form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Error message styling */
+.form-container .error {
+    color: var(--danger-color);
+    font-size: 0.8rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+/* Form-button */
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white-color);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Click effect */
+.form-container button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------
+   4.7 UTILITIES
+   --------------------------------------------------------- */
+/* Indenting */
+.custom-indent {
+    padding-left: 20px;
+}
+
+/* Back to the Top link */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   Part 5: FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+
+/* =========================================================
+   Part 6: RESPONSIVENESS
+   ========================================================= */
+
+   /* ---------------------------------------------------------
+   6.1 Responsive media
+   --------------------------------------------------------- */
+/* Large Screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* Laptops */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ---------------------------------------------------------
+   6.2 Responsive Table behavior
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .modern-table thead {
+        display: none;
+    }
+
+    .modern-table,
+    .modern-table tbody,
+    .modern-table tr,
+    .modern-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .modern-table tr {
+        margin-bottom: 15px;
+        background: var(--white-color);
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .modern-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: none;
+    }
+
+    .modern-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: 600;
+        text-align: left;
+        color: var(--primary-color);
+    }
+}
