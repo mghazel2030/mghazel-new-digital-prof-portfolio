@@ -577,3 +577,33 @@ footer {
         color: var(--primary-color);
     }
 }
+
+
+/* NEW */
+/* Removes any unwanted green backgrounds and sets up the layout */
+.list-item-container {
+  display: flex;
+  align-items: flex-start;  /* Aligns the top of the image with the top of the text */
+  gap: 30px;                /* Creates clean horizontal separation */
+  background: transparent;  /* Guarantees no forced green background color */
+}
+
+.text-content {
+  flex: 1;                  /* Allows the text to naturally take up the left space */
+}
+
+.sub-list {
+  margin-top: 10px;         /* Adds breathing room below the main introductory text */
+  padding-left: 20px;       /* indents your nested bullet points normally */
+}
+
+/* target your resume image */
+img {
+  width: 250px;       /* Increase this number (e.g., 300px) to make it even bigger */
+  height: auto;       /* Keeps the image aspect ratio perfectly intact */
+  flex-shrink: 0;     /* Critical: Stops the flexbox layout from crushing your image size */
+  margin-left: 40px;  /* Pushes the text away so they don't crowd each other */
+}
+
+
+
