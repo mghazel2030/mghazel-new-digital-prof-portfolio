@@ -21,14 +21,14 @@
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="./assets/images/my-e-portfolio-logo.jpg" width = "200px" alt="Digital Portfolio">
+                    <img style='border:2px solid #3009f0 ; border-radius: 15px;' src="./assets/images/my-e-portfolio-logo.jpg" width = "300px" alt="Digital Portfolio">
                 </a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="education.html" class="active">Education</a></li>
-                <li><a href="career.html">Experience</a></li>
-                <li><a href="github-projects.html">GitHub Open Source Projects</a></li>
+                <li><a href="education.html" class="active">University Education</a></li>
+                <li><a href="career.html">Work Experience</a></li>
+                <li><a href="github-projects.html">GitHub Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="prof-dev.html">Professional Development</a></li>
                 <li><a href="career-reflections.html">Career Reflections</a></li>
@@ -39,9 +39,25 @@
     </header>
 
     <main>
-        <section>
-            <h1>Education</h1>
-            <br>
+        <br>
+        <br>
+         <!-- Put this right before your first section -->
+        <nav id="toc-container">
+            <div class="toc-header">Table of Contents</div>
+            <ul class="toc-list">
+                <li><a href="#university-of-waterloo"><span class="toc-num">1.</span>University of Waterloo</a></li>
+                <li><a href="#university-of-ottawa"><span class="toc-num">2.</span>University of Ottawa</a></li>
+                <li><a href="#university-of-arizona"><span class="toc-num">3.</span>University of Arizona</a></li>
+                <li><a href="#bcit"><span class="toc-num">4.</span>British Columbia Institute of Technology</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <h1>University Education</h1>
+        <hl>
+        <br>
+        <section id="university-of-waterloo" class="content-section">
+            <h3>1. University of Waterloo, Waterloo, ON, Canada</h3>
             <div>
                 <table class="modern-table">
                     <thead>
@@ -51,18 +67,46 @@
                             <th>Specialization</th>
                             <th>Graduation</th>
                             <th>GPA (%)</th>
-                            <th>Institution</th>
+                            <th>Research</th>
                             <th>Publications</th>
+                            <th>Institution</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="#">1</td> 
+                            <td data-label="#" style="text-align:center">1</td> 
                             <td data-label="Degree">PhD</td>
                             <td data-label="Specialization">Electrical & Computer Engineering</td>
                             <td data-label="Graduation">Oct. 2004</td>
                             <td data-label="GPA (%)">90%</td>
-                            <td data-label="Institution">University of Waterloo, Waterloo, ON, Canada.</td>
+                            <td data-label="Research" style="vertical-align: top;">
+                                <ul>          
+                                    <li>Developed novel methods for combing Fractal-Wavelets transforms</li> 
+                                        <ul>
+                                            <li>Image compression</li>
+                                            <li>Image denoising</li>
+                                            <li>Image enhancement</li>
+                                            <li>Image resizing</li>
+                                            <li>Image search</li>
+                                        </ul>
+                                    </li>
+                                    <li>Conventional computer vision algorithms development in the spatial and transform domains:</li>
+                                        <ul>
+                                            <li>Image compression</li>
+                                            <li>Image de-noising</li>
+                                            <li>Image enhancement</li>
+                                            <li>Image enhancement</li>
+                                        </ul>
+                                    </li>   
+                                    <li>Comprehensive evaluation of developed Fractal-Wavelets image processing methods</li>
+                                        <ul>
+                                            <li>Comparison with conventional computer vision algorithms</li>
+                                            <li>Demonstrating the benefits and advantages and limitations</li>
+                                            <li>Documenting, publishing and presenting thesis, conference and journal research papers.</li>
+                                        </ul>
+                                    </li>   
+                                </ul>
+                            </td>
                             <td data-label="Publications">
                                 <ul>
                                     <li><a href="https://links.uwaterloo.ca/papers/waterloo/fwdenoising_ieee.pdf">Fractal-Wavelet Image De-noising Revisited.</a></li>
@@ -97,16 +141,46 @@
                                         </ul>
                                 </ul>
                             </td>
+                            <td data-label="Institution" rowspan="3" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/University_of_Waterloo.png" alt="Retail store shelves inspection - Zebra Technologies" width="300"></center>
+                                <p>University of Waterloo, Waterloo, ON, Canada.</p> 
+                            </td>
                         </tr>
 
                         <tr>
-                            <td data-label="#">2</td> 
-                            <td data-label="Degree">M.A.Sc.</td>
-                            <td data-label="Specialization">Electrical & Computer Engineering</td>
-                            <td data-label="Graduation">June. 1999</td>
-                            <td data-label="GPA (%)">80%</td>
-                            <td data-label="Institution">University of Waterloo, Waterloo, ON, Canada.</td>
-                            <td data-label="Publications">
+                            <td data-label="#" style="text-align:center">2</td> 
+                            <td data-label="Degree" style="text-align:center">M.A.Sc.</td>
+                            <td data-label="Specialization" style="text-align:center">Electrical & Computer Engineering</td>
+                            <td data-label="Graduation" style="text-align:center">June. 1999</td>
+                            <td data-label="GPA (%)" style="text-align:center">80%</td>
+                            <td data-label="Research" style="vertical-align: top;">
+                                <ul>          
+                                    <li>Fractal image reconstruction and representation:</li> 
+                                        <ul>
+                                            <li>Iterated Function Systems (IFS)</li>
+                                            <li>Inverse problems</li>
+                                            <li>Image compression</li>
+                                            <li>Quadtree-based Fractal image representation</li>
+                                            <li>Image denoising</li>
+                                        </ul>
+                                    </li>
+                                    <li>Wavelets image processing:</li> 
+                                        <ul>
+                                            <li>Image representation<\li>
+                                            <li>Image compression</li>
+                                            <li>Image denoising</li>
+                                        </ul>
+                                    </li>
+                                    <li>Comprehensive evaluation of developed Fractal and Wavelets image processing methods</li>
+                                        <ul>
+                                            <li>Comparison of the two methods and algorithms</li>
+                                            <li>Demonstrating the benefits and advantages and limitations</li>
+                                            <li>Documenting, publishing and presenting thesis, conference and journal research papers.</li>
+                                        </ul>
+                                    </li>   
+                                </ul>
+                            </td>
+                            <td data-label="Publications" style="vertical-align: top;">
                                 <ul>
                                     <li><a href="https://cst.uwaterloo.ca/pub_thesis.html#Thesis97">Fractal-based Signal Compression.</a></li>
                                         <ul class="custom-indent">
@@ -123,51 +197,187 @@
                         </tr>
 
                         <tr>
-                            <td data-label="#">3</td> 
+                            <td data-label="#" style="text-align:center">3</td> 
                             <td data-label="Degree">M.Math</td>
                             <td data-label="Specialization">Applied Mathematics</td>
                             <td data-label="Graduation">June. 1994</td>
                             <td data-label="GPA (%)">90%</td>
-                            <td data-label="Institution">University of Waterloo, Waterloo, ON, Canada.</td>
-                            <td data-label="Publications">
+                            <td data-label="Research" style="vertical-align: top;">
+                                <ul>          
+                                    <li>Continuous and discrete-time dynamical systems:</li> 
+                                        <ul>
+                                            <li>Stability</li>
+                                            <li>Stationary points</li>
+                                            <li>Convergence</li>
+                                            <li>Fixed points</li>
+                                            <li>Iterated function systems</li>
+                                            <li>Inverse problem.</li>
+                                            <li>Comprehensive evaluation of developed methods</li>
+                                                <ul>
+                                                    <li>Demonstrating the benefits and advantages and limitations</li>
+                                                    <li>Documenting, publishing and presenting thesis.</li>
+                                                </ul>
+                                        </ul>
+                                    </li>   
+                                </ul>
                             </td>
                         </tr>
 
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section id="university-of-ottawa" class="content-section">
+            <h3>2. University of Ottawa, Ottawa, ON, Canada</h3>
+            <div>
+
+                <table class="modern-table">
+                    <thead>
                         <tr>
-                            <td data-label="#">4</td> 
-                            <td data-label="Degree">M.Eng</td>
-                            <td data-label="Specialization">Electrical & Computer Engineering</td>
-                            <td data-label="Graduation">Oct. 2015</td>
-                            <td data-label="GPA (%)">94%</td>
-                            <td data-label="Institution">University of Ottawa, Ottawa, ON, Canada.</td>
-                            <td data-label="Publications">
+                            <th>#</th>
+                            <th>Degree</th>
+                            <th>Specialization</th>
+                            <th>Graduation</th>
+                            <th>GPA (%)</th>
+                            <th>Courses</th>
+                            <th>Institution</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        
+                        <tr>
+                            <td data-label="#" style="text-align:center">4</td> 
+                            <td data-label="Degree" style="text-align:center">M.Eng</td>
+                            <td data-label="Specialization" style="text-align:center">Electrical & Computer Engineering</td>
+                            <td data-label="Graduation" style="text-align:center">Oct. 2015</td>
+                            <td data-label="GPA (%)" style="text-align:center">94%</td>
+                            <td data-label="Courses" style="vertical-align: top;">
+                                <ul>
+                                    <li>Completed 12 courses in computer vision, machine and deep learning, and software development, including:</li>
+                                        <ul>
+                                            <li>Software Engineering Project Management</li>
+                                            <li>Stochastic Processes</li>
+                                            <li>Source Coding and Data Compression </li>
+                                            <li>Medical Image Modalities</li>
+                                            <li>Graphical Models</li>
+                                            <li>Machine Vision</li>
+                                            <li>Deep Learning and Reinforcement Learning </li>
+                                            <li>Applied Machine Learning </li>
+                                            <li>Topics in Applied Artificial Intelligence</li>
+                                            <li>Adaptive Signal Processing</li>
+                                            <li>Neural Networks and Fuzzy Systems.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Institution" rowspan="3" colspan="1" style="text-align: center; vertical-align: center; width: 400px;">
+                                <img src="./assets/images/uOttawa.png" alt="University of Ottawa" width="300" style="display: block; margin-left: auto; margin-right: auto;">
+                                <p> University of Ottawa, Ottawa, ON, Canada.</p>
+                            </td>
                             </td>
                         </tr>
 
-                        <tr>
-                            <td data-label="#">5</td> 
-                            <td data-label="Degree">B.A.Sc.</td>
-                            <td data-label="Specialization">Engineering Mathematics</td>
-                            <td data-label="Graduation">Aug. 1990</td>
-                            <td data-label="GPA (%)">98%</td>
-                            <td data-label="Institution">University of Arizona, Tucson, AZ, USA.</td>
-                            <td data-label="Publications">
-                            </td>
-                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section id="university-of-arizona" class="content-section">
+            <h3>3. University of Arizona, Tucson, AZ, USA</h3>
+            <div>
 
+                <table class="modern-table">
+                    <thead>
                         <tr>
-                            <td data-label="#">6</td> 
-                            <td data-label="Degree">Associate Degree</td>
-                            <td data-label="Specialization">Applied Software Development</td>
-                            <td data-label="Graduation">Oct. 2015</td>
-                            <td data-label="GPA (%)">92%</td>
-                            <td data-label="Institution">British Columbia Institute of Technology,  Vancouver, BC, Canada.</td>
-                            <td data-label="Publications">
+                            <th>#</th>
+                            <th>Degree</th>
+                            <th>Specialization</th>
+                            <th>Graduation</th>
+                            <th>GPA (%)</th>
+                            <th>Courses</th>
+                            <th>Institution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td data-label="#" style="text-align:center">5</td> 
+                            <td data-label="Degree" style="text-align:center">B.A.Sc.</td>
+                            <td data-label="Specialization" style="text-align:center">Engineering Mathematics</td>
+                            <td data-label="Graduation" style="text-align:center">Aug. 1990</td>
+                            <td data-label="GPA (%)" style="text-align:center">98%</td>
+                            <td data-label="Courses" style="vertical-align: top;">
+                                <ul>
+                                    <li>Completed over 50 courses in computer vision, machine and deep learning, and software development, including:</li>
+                                        <ul>
+                                            <li>Applied mathematics</li>
+                                            <li>Probability and stochastic processes</li>
+                                            <li>Statistics</li>
+                                            <li>Optimization</li>
+                                            <li>Differential equations</li>
+                                            <li>Dynamical systems</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Institution" rowspan="1" colspan="1" style="text-align: center; vertical-align: center; width: 400px;">
+                                <img src="./assets/images/university-of-arizona.jpg" alt="University of Arizona" width="300" style="display: block; margin-left: auto; margin-right: auto;">
+                                <p> University of Arizona, Tucson, AZ, USA.</p>
+                            </td>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                
+            </div>
+        </section>
+        <br>
+        <section id="bcit" class="content-section">
+            <h3>4. British Columbia Institute of Technology (BCIT), Vancouver, BC, Canada</h3>
+            <div>
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Degree</th>
+                            <th>Specialization</th>
+                            <th>Graduation</th>
+                            <th>GPA (%)</th>
+                            <th>Courses</th>
+                            <th>Institution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td data-label="#" style="text-align:center" style="text-align:center">6</td> 
+                            <td data-label="Degree" style="text-align:center">Associate Degree</td>
+                            <td data-label="Specialization" style="text-align:center">Applied Software Development</td>
+                            <td data-label="Graduation" style="text-align:center">Oct. 2015</td>
+                            <td data-label="GPA (%)" style="text-align:center">92%</td>
+                            <td data-label="Courses" style="vertical-align: top;">
+                                <ul>
+                                    <li>Completed many software development courses, including:</li>
+                                        <ul>
+                                            <li>Applied Programming Fundamentals with Python</li>
+                                            <li>Object Oriented Programming with Java</li>
+                                            <li>Business Analysis and Systems Design</li>
+                                            <li>Application Development with Java</li>
+                                            <li>Application Development with C#</li>
+                                            <li>Application Development with C++</li>
+                                            <li>Advanced C++ Application Development</li>
+                                            <li>Application Development with C.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Institution" rowspan="1" colspan="1" style="text-align: center; vertical-align: center; width: 400px;">
+                                <img src="./assets/images/bcit.jpg" alt="British Columbia Institute of Technology (BCIT)" width="300" style="display: block; margin-left: auto; margin-right: auto;">
+                                <p> British Columbia Institute of Technology (BCIT), Vancouver, BC, Canada.</p>
+                            </td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>

@@ -330,99 +330,123 @@ li {
     text-decoration: underline;
 }
 
-/* ---------------------------------------------------------
-   4.6 FORMS
-   --------------------------------------------------------- */
-   /* Note: I used Bootstrap Forms Styles utilities for my Contact Form 
-            - See: contact.html
-    */
 
+/* ---------------------------------------------------------
+   4.6 FORMS (Custom Non-Bootstrap Engine)
+   --------------------------------------------------------- */
+
+/* Main wrapping framework */
+.contact-section {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color, #3b4293);
+}
+
+/* Flexbox wrapper to cleanly center the wide white form box */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* The wide white card containing your form elements */
 .form-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 40px;
-    background: var(--white-color);
+    width: 60%;           /* UPDATED: Form now occupies exactly 60% of the page width */
+    min-width: 320px;     /* ADDED: Ensures the form doesn't shrink too small on mobile phones */
+    padding: 40px 30px;    
+    background: var(--white-color, #ffffff); 
+    border: 2px solid var(--primary-color, #3b4293); 
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
 }
 
-/* Form title spacing */
+/* Form title layout */
 .form-container h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.75rem;
+    color: var(--primary-color, #3b4293);
 }
 
-/* Label styling */
+/* Individual form stack rows */
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text label styling */
 .form-container label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-weight: 600;
-    color: var(--primary-color);
+    font-size: 0.9rem;
+    color: var(--primary-color, #3b4293);
 }
 
-/* Input + Textarea styling */
-.form-container input,
-.form-container textarea {
+/* Custom Text Inputs + Custom Textareas styling */
+.form-container .form-input {
     width: 100%;
-    padding: 14px 16px;
-    margin-bottom: 20px;
-    border: 1px solid #d8dee9;
+    padding: 12px 14px;
+    border: 2px solid #a3b1c6; 
     border-radius: 8px;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
     background-color: #f9fbff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
-/* Focus state */
-.form-container input:focus,
-.form-container textarea:focus {
+/* Focused active box field states */
+.form-container .form-input:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--accent-color, #0671f4); 
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(6, 113, 244, 0.15);
 }
 
-/* Textarea resizing control */
-.form-container textarea {
-    min-height: 120px;
+/* Textarea physical sizing controls */
+.form-container textarea.form-input {
+    min-height: 110px;
     resize: vertical;
+    font-family: inherit;
 }
 
-/* Error message styling */
-.form-container .error {
-    color: var(--danger-color);
-    font-size: 0.8rem;
-    margin-top: -15px;
-    margin-bottom: 15px;
-}
-
-/* Form-button */
-.form-container button {
+/* Custom button engine rules */
+.form-container .form-submit-btn {
     width: 100%;
     padding: 14px;
     font-size: 1rem;
     font-weight: 600;
-    border: none;
+    border: 2px solid var(--primary-color, #3b4293); 
     border-radius: 8px;
     cursor: pointer;
-
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: var(--white-color);
-
+    background: linear-gradient(135deg, var(--primary-color, #3b4293), var(--accent-color, #0671f4));
+    color: var(--white-color, #ffffff);
+    box-sizing: border-box;
     transition: all 0.3s ease;
 }
 
-/* Hover effect */
-.form-container button:hover {
+/* Hover mouse responses */
+.form-container .form-submit-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Click effect */
-.form-container button:active {
+/* Click mechanical state responses */
+.form-container .form-submit-btn:active {
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* ---------------------------------------------------------
    4.7 UTILITIES
@@ -580,30 +604,168 @@ footer {
 
 
 /* NEW */
-/* Removes any unwanted green backgrounds and sets up the layout */
-.list-item-container {
-  display: flex;
-  align-items: flex-start;  /* Aligns the top of the image with the top of the text */
-  gap: 30px;                /* Creates clean horizontal separation */
-  background: transparent;  /* Guarantees no forced green background color */
+/* Enable smooth scrolling across the entire page */
+html {
+    scroll-behavior: smooth;
 }
 
-.text-content {
-  flex: 1;                  /* Allows the text to naturally take up the left space */
+/* ==========================================
+   CLEAN, REUSABLE TABLE OF CONTENTS STYLES
+   ========================================== */
+
+#toc-container {
+    background-color: #f8fafc; 
+    border: 2px solid #0770f0; 
+    border-radius: 12px;
+    padding: 14px 20px !important; 
+    max-width: 600px;   
+    width: 100%;        
+    margin: 24px 0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    font-family: 'Inter', sans-serif;
+    
+    /* CRITICAL FIXES: Overrides any master horizontal flex columns layout */
+    display: block !important; 
+    flex-direction: column !important;
 }
 
-.sub-list {
-  margin-top: 10px;         /* Adds breathing room below the main introductory text */
-  padding-left: 20px;       /* indents your nested bullet points normally */
+/* Bold Title Header - Spans the full top width */
+.toc-header {
+    display: block !important;
+    width: 100% !important;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #334155; 
+    font-weight: 800; 
+    margin: 0 0 10px 0 !important; 
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px !important;
 }
 
-/* target your resume image */
-img {
-  width: 250px;       /* Increase this number (e.g., 300px) to make it even bigger */
-  height: auto;       /* Keeps the image aspect ratio perfectly intact */
-  flex-shrink: 0;     /* Critical: Stops the flexbox layout from crushing your image size */
-  margin-left: 40px;  /* Pushes the text away so they don't crowd each other */
+/* List wrapper resets to vertical blocks */
+.toc-list {
+    list-style-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important; 
+    width: 100% !important;
+}
+
+/* Item lines stack on top of each other tightly */
+.toc-list li {
+    display: block !important;   
+    width: 100% !important;
+    margin: 0 0 1px 0 !important; /* Extremely tight gap between rows */
+    padding: 0 !important;       
+}
+
+/* Links span the full row area underneath the title */
+.toc-list a {
+    display: block !important;   
+    width: 100% !important;      /* Forces the link block to own its entire line */
+    color: #0046d5; 
+    text-decoration: none;
+    font-size: 1.15rem; 
+    font-weight: 600; 
+    padding: 2px 6px !important; /* Minimal internal link height spacing */
+    margin: 0 !important;
+    white-space: nowrap;         
+    transition: all 0.15s ease-in-out;
+}
+
+/* Item numbers decoration */
+.toc-num {
+    color: #0046d5; 
+    margin-right: 8px;
+    font-weight: 700;
+    display: inline-block;       
+}
+
+/* Hover feedback */
+.toc-list a:hover {
+    color: #002699; 
+    background-color: #e0f2fe; 
 }
 
 
+/************ New Table Style ************/
+/* Unique wrapper class for your specifications table */
+.tech-spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 24px 0;
+    
+    /* IMPROVEMENT 1: Increased text size across the entire table */
+    font-size: 16px; 
+    color: #1e293b;
+    table-layout: fixed;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Base cell styling applied to every column element */
+.tech-spec-table th, 
+.tech-spec-table td {
+    /* IMPROVEMENT 2: High-visibility solid borders on all cells */
+    border: 2px solid #475569; 
+    padding: 16px 20px;
+    line-height: 1.6;
+    
+    /* IMPROVEMENT 3: Soft non-white light-blue background for content cells */
+    background-color: #f0f7ff; 
+}
+
+/* HIGHLIGHT: Row headers / Main Title column (The first column) */
+.tech-spec-table td.row-header {
+    /* Slightly deeper light-blue accent to distinguish it as a title */
+    background-color: #dbeafe; 
+    color: #0f172a;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    /* Slightly smaller but bolded for uppercase label hierarchy */
+    font-size: 14px; 
+    letter-spacing: 0.75px;
+}
+
+/* HIGHLIGHT: Section Subheaders (Like "Algorithms", "Software", etc.) */
+.tech-spec-table .section-title {
+    /* Accent blue for subheadings */
+    background-color: #bfdbfe; 
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+/* Styling for nested bulleted lists inside the table */
+.tech-spec-table ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.tech-spec-table li {
+    margin-bottom: 8px;
+    /* List typography scaled up with the rest of the text */
+    font-size: 16px; 
+}
+
+.tech-spec-table li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Image container handling */
+.tech-spec-table img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.tech-spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* table-layout: fixed; <--- REMOVE THIS LINE so the browser can calculate widths dynamically */
+}
 

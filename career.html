@@ -22,14 +22,13 @@
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="./assets/images/my-e-portfolio-logo.jpg" width = "200px" alt="Digital Portfolio">
-                </a>
+                    <img style='border:2px solid #3009f0 ; border-radius: 15px;' src="./assets/images/my-e-portfolio-logo.jpg" width = "300px" alt="Digital Portfolio">
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="career.html" class="active">Experience</a></li>
-                <li><a href="github-projects.html">GitHub Open Source Projects</a></li>
+                <li><a href="education.html">University Education</a></li>
+                <li><a href="career.html" class="active">Work Experience</a></li>
+                <li><a href="github-projects.html">GitHub Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="prof-dev.html">Professional Development</a></li>
                 <li><a href="career-reflections.html">Career Reflections</a></li>
@@ -39,503 +38,2578 @@
             </ul>
         </nav>
     </header>
-
     <main>
+        <br>
+        <br>
+        <!-- Put this right before your first section -->
+        <nav id="toc-container">
+            <div class="toc-header">Table of Contents</div>
+            <ul class="toc-list">
+                <li><a href="#schneider"><span class="toc-num">1. </span>Machine Vision Consultant - Schneider Electric</a></li>
+                <li><a href="#bl-innovare"><span class="toc-num">2. </span>Senior CV & ML Research Scientist - BL Innovare</a></li>
+                <li><a href="#quartz"><span class="toc-num">3. </span>Senior CV & Software Engineer - Quartz Imaging</a></li>
+                <li><a href="#kore"><span class="toc-num">4. </span>Senior CV & ML Research Engineer - Kore Geosystems</a></li>
+                <li><a href="#terramera"><span class="toc-num">5. </span>ML Engineer - Terramera</a></li>
+                <li><a href="#zebra"><span class="toc-num">6. </span>Advanced CV Engineer - Zebra Technologies</a></li>
+                <li><a href="#flir"><span class="toc-num">7. </span>Research Engineer - FLIR</a></li>
+                <li><a href="#ohri"><span class="toc-num">8. </span>Research Associate - OHRI</a></li>
+                <li><a href="#wiiv"><span class="toc-num">9. </span>CV Engineer - FitMyFoot</a></li>
+                <li><a href="#mda"><span class="toc-num">10. </span>Research Analysis - MDA</a></li>
+                <li><a href="#ubc"><span class="toc-num">11. </span>Post-Doctorate Research Fellow - UBC</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
         <section>
             <h1>Professional experience</h1>
+            <hl>
             <br>
-            <br>
-            <div>
-                <ul class="main-list"></ul>
-                    <h3>Senior Computer Vision & Machine Learning Research Scientist</h3>
-                    <p><a href="https://www.bl-innovare.com/">BL Innovare</a> | Markham, ON | Mar. 2024 – Aug. 2025 |</p>
-                
-                    <li class="list-item-container">
-                        <!-- Wrap all the text content together inside a single block -->
-                        <div class="text-content">
-                            <p>Collaborated on developing, evaluating and deploying 
-                                an end-to-end machine vision system for automobile exterior 
-                                body inspection and detection of damage, scratches and dents, 
-                                using high-resolution video data, including:</p>
-                            
-                            <ul class="sub-list">
-                                <li>Optical Imaging: Optimal selection of light sources, lenses/optics, sensors/cameras.</li>
-                                <li>Image acquisition and pre-processing: Enhancing the quality of acquired digital imagery.</li>
-                                <li>Vision processing unit: Developing computer vision pipelines and machine learning models.</li>
-                                <li>Communication: Internal/external interfaces and result reporting, visualization and logging.</li>
+            <section id="schneider" class="content-section"></section>
+                <div>
+                    <ul class="main-list"></ul>
+                        <h3>1. Machine Vision Consultant</h3>
+                        <p><a href="https://www.bl-innovare.com/">Schneider Electric</a> | Markham, ON | Mar. 2026 – Present |</p>
+                </div>
+
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
+
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
+
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>EcoStruxure Vision Quality Control (EVQC): </li>
+                                    <ul> 
+                                        <li> EVQC </li>is Schneider Electric’s AI-powered machine vision software for automated factory line inspections. </li>
+                                        <li> It uses deep-learning algorithms and standard industrial cameras to detect defects, verify assembly, and automate quality control in real time.
+                                    </ul>  
+                                <li> EVQC Business Case: </li>
+                                    <ul>
+                                        <li>Financial Value:</li>
+                                            <ul>
+                                                <li>70x fewer false alarms: Drastically cuts line stoppages and manual re-inspections.</li>
+                                                <li> 50% faster cycles: Drops inspection times from 400ms to 200ms to maximize throughput.</li>
+                                                <li>Lower CAPEX: Runs on standard hardware without needing expensive, dedicated PCs.</li>
+                                            </ul>
+                                        <li>Operational Efficiency: </li>
+                                            <ul>
+                                                <li>30% faster deployment: No-code interface allows floor operators to set up systems in clicks.</li>
+                                                <li>Global scaling: Quality templates easily copy and deploy across multiple global sites.</li>
+                                            </ul>
+                                        <li>Risk & Waste Reduction: </li>
+                                            <ul>
+                                                <li>Minimized scrap: Catches defects early to reduce material waste and energy use.</li>
+                                                <li>Multi-zone checking: Monitors screws, component placement, and missing parts simultaneously.</li>
+                                            </ul>
+                                    </ul>
                             </ul>
-                        </div>
-                        <!-- Keep the image at the same level as the text block -->
-                        <img src="./assets/images/bl-innovare.jpg" alt="Automobile Inspection System" style="width: 250px; height: auto; flex-shrink: 0; margin-left: 40px;" class="right-image">
-                    </li>
-                </ul>
+                            
+                        </td>
 
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>The EVQC Technical Challenges include: </li>
+                                    <ol>
+                                        <li>Data & AI Modeling: </li>
+                                            <ul>
+                                                <li>Few defect samples: Rare real-world anomalies make training AI models difficult.</li>
+                                                <li>Subjective defects: Hard to standardize what defines a "defect" across different product batches.</li>
+                                            </ul>   
+                                        <li>Factory Floor Environment: </li>
+                                            <ul>
+                                                <li>Unstable lighting: Glare, reflections, and changing ambient light disrupt camera accuracy.</li>
+                                                <li>Component variance: Micro-sized parts and unstable third-party supply lines cause visual inconsistencies.</li>
+                                            </ul>
+                                        <li>Speed & Integration: </li>
+                                            <ul>
+                                                <li>Tight time windows: Processing complex AI algorithms in sub-200ms windows to avoid line bottlenecks.</li>
+                                                <li>Legacy syncing: Linking modern edge AI software with older factory PLC hardware.</li>
+                                            </ul>
+                                        <li>Usability & Scaling: </li>
+                                            <ul>
+                                                <li>Expert shortage: Lack of specialized computer vision engineers to tune models.</li>
+                                                <li>User complexity: Making advanced AI simple enough for floor operators to troubleshoot without code.</li>
+                                            </ul>
+                                    </ol>
+                            </ul>
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/schneider.jpg" alt="Machine Vision Systems - Schneider Electric" width="500">
+                        </td>
+                    </tr>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Supporting the design of real-world end-to-end machine vision systems, including the optimization of the specialized hardware components and intelligent software engine to achieve high-speed, automated, robust and accurate decision-making capabilities:
+                                    <ul>
+                                        <li>Hardware Components: A synchronized chain of physical devices to capture high-quality visual data under industrial conditions.
+                                            <ul>
+                                                <li>Lighting and Illumination</li>
+                                                <li>Optics (Lenses)</li>
+                                                <li>Image Sensors and Cameras</li>
+                                                <li>Vision Controllers and PLCs</li>
+                                                <li>Enclosures and Accessories.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul> 
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center; ">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Image Pre-processing: </li>
+                                    <ul>
+                                        <li>Gaussian Blurring & Median Filtering</li>
+                                        <li>Histogram Equalization</li>
+                                        <li>Morphological Dilation & Erosion</li>
+                                    </ul>
+                                <li>Part Location and Alignment:</li>
+                                    <ul>
+                                        <li>Normalized Cross-Correlation (NCC)</li>
+                                        <li>Geometric Pattern Matching </li>
+                                    </ul>
+                                <li>Dimensional Measurement (Metrology):</li>
+                                    <ul>
+                                        <li>Canny & Sobel Edge Detection</li>
+                                        <li>Sub-pixel Edge Extraction</li>
+                                        <li>Hough Transform</li>
+                                    </ul>
+                                <li>Presence and Absence Verification: </li>
+                                    <ul>
+                                        <li>Thresholding (Binarization): </li>
+                                        <li>Blob Analysis (Connected Component Labeling)</li>
+                                        <li>Pixel Counting (ROI Analysis)</li>
+                                    </ul>
+                                <li>Surface and Flaw Detection: </li>
+                                    <ul>
+                                        <li>Image Differencing</li>
+                                        <li>Texture Analysis (Gabor Filters)</li>
+                                    </ul>
+                                <li>Identification and Traceability: </li>
+                                    <ul>
+                                        <li>Optical Character Recognition & Verification (OCR/OCV)</li>
+                                        <li>Barcode & 2D Data</li>
+                                        <li>Matrix Decoding</li>
+                                    </ul>
+                            </ul>
+                        </td>
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center; ">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Image Classification & Feature Extraction: </li>
+                                    <ul>
+                                        <li>Convolutional Neural Networks (CNNs) (e.g., ResNet, MobileNet, EfficientNet)</li>
+                                        <li>Vision Transformers (ViTs)</li>
+                                        <li>Support Vector Machines (SVM) & Random Forests (on extracted features)</li>
+                                    </ul>
+                                <li>Object Detection & Localization:</li>
+                                    <ul>
+                                        <li>YOLO (You Only Look Once) (v8, v10, v11, etc.)</li>
+                                        <li>SSD (Single Shot MultiBox Detector)</li>
+                                        <li>Faster R-CNN</li>
+                                    </ul>
+                                <li>Semantic & Instance Segmentation:</li>
+                                    <ul>
+                                        <li>U-Net & U-Net++</li>
+                                        <li>Mask R-CNN</li>
+                                        <li>Segment Anything Model (SAM) (Edge/Mobile versions)</li>
+                                    </ul>
+                                <li>Anomaly Detection (Unsupervised/Semi-Supervised): </li>
+                                    <ul>
+                                        <li>Autoencoders (AE) & Variational Autoencoders (VAE)</li>
+                                        <li>Generative Adversarial Networks (GANs) (e.g., AnoGAN)</li>
+                                        <li>Normalizing Flows (e.g., FastFlow)</li>
+                                        <li>PatchCore & SPADE (Embedding-based anomaly detection)</li>
+                                    </ul>
+                                <li>Optical Character Recognition (AI OCR): </li>
+                                    <ul>
+                                        <li>CRNN (Convolutional Recurrent Neural Network)</li>
+                                        <li>Transformer-based OCR (e.g., PaddleOCR, TrOCR)</li>
+                                    </ul>
+                                <li>Model Optimization & Deployment (Edge ML): </li>
+                                    <ul>
+                                        <li>Quantization & Pruning (TensorRT, OpenVINO)</li>
+                                        <li>Knowledge Distillation</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Hardware 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li> Illumination & Lighting Design: </li>
+                                    <ul>
+                                        <li>Lighting Geometries (Backlighting, Coaxial, Ring, Low-angle Darkfield, Dome)</li>
+                                        <li>Wavelength Selection (Infrared, Ultraviolet, RGB, Monochromatic Bandpass Filtering)</li>
+                                        <li>Strobe Synchronization (Overdriving LEDs, High-speed Controllers)</li>
+                                    </ul>
+                                <li> Industrial Camera Setup:</li>
+                                    <ul>
+                                        <li>Sensor Architecture (Global Shutter vs. Rolling Shutter)</li>
+                                        <li>Acquisition Mode (Area Scan vs. Line Scan)</li>
+                                        <li>Sensor Technology (Monochrome vs. Color, SWIR, UV, 3D Time-of-Flight)</li>
+                                    </ul>
+                                <li>Optics & Lens Selection:</li>
+                                    <ul>
+                                        <li>Lens Types (Telecentric, Fixed Focal Length, Entocentric, Liquid/Autofocus)</li>
+                                        <li>Optical Parameter Optimization (Field of View, Working Distance, Depth of Field, Sensor Resolution Matching)</li>
+                                        <li>Optical Filters (Polarizing, Bandpass, Longpass, Shortpass)</li>
+                                    </ul>
+                                <li> Industrial Camera Setup:</li>
+                                    <ul>
+                                        <li>U-Net & U-Net++</li>
+                                        <li>Mask R-CNN</li>
+                                        <li>Segment Anything Model (SAM) (Edge/Mobile versions)</li>
+                                    </ul>
+                                <li>Hardware Interfaces & Data Transfer: </li>
+                                    <ul>
+                                        <li>Industrial Communication Protocol (GigE Vision, USB3 Vision, Camera Link, CoaXPress)</li>
+                                        <li>Real-time I/O (Opto-isolated Digital I/O, Hardware Triggers, PLC Integration)</li>
+                                    </ul>
+                                <li>Computing & Processing Platforms: </li>
+                                    <ul>
+                                        <li>Industrial PCs (IPCs) (Intel/AMD x86 Architecture, Active/Passive Cooling)</li>
+                                        <li>Edge AI & Embedded Accelerators (NVIDIA Jetson, Intel Core Ultra/NPU)</li>
+                                        <li>Smart Cameras (All-in-one Sensor and Processing Unit)</li>
+                                    </ul>
+                                <li>Mechanical & Environmental Protection: </li>
+                                    <ul>
+                                        <li>Enclosure Ratings (IP65/IP67/IP69K Waterproof and Dustproof)</li>
+                                        <li>Thermal Management (Heatsinks, Vortex Coolers, Fanless Enclosures)</li>
+                                        <li>Vibration Isolation (Rigid Mounting Brackets, Industrial Gantry Isolation)</li>
+                                    </ul>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Project: End-to-end Machine Vision System proposal for inspecting Fiber Cement Boards during manufacturing.</li>
+                                <li>Challenge: Extremely tight 1-week deadline to deliver a comprehensive technical proposal, work plan, Bill of Materials (BOM), and cost estimates.</li>
+                            <ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Objective: Lead the technical system design and cross-functional synthesis under intense time pressure.</li>
+                                <li>Goal: Deliver a flawless, competitive engineering strategy engineered for harsh, high-speed factory environments.</li>
+                            <ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACTION
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Customer Alignment: Clarified line speeds, inspection tolerances, and factory constraints directly with the client.</li>
+                                <li>Hardware Engineering: Collaborated with internal staff and vendors to select cameras, optics, and lighting to compile the BOM.</li>
+                                <li>Cross-Functional Costing: Partnered with budgeting, costing, and marketing teams to lock down competitive commercial pricing.</li>
+                                <li>Project Roadmap: Mapped a detailed engineering work plan from initial feasibility testing to final on-site PLC integration.</li>
+                            <ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Submission: Delivered a technically sound, highly accurate, and complete proposal exactly on deadline.</li>
+                                <li>Outcome: Company was successfully awarded the manufacturing contract.</li>
+                                <li>Impact: Expanded the business footprint into the building materials sector and proved rapid organizational deployment.</li>
+                            <ul>
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL & SOFTWARE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Garbage In, Garbage Out: No algorithm—conventional or AI—can fix a poorly captured, blurry, or low-contrast image.</li>
+                                <li>Prioritize Determinism First: Use fast, rule-based conventional vision (e.g., geometric matching, thresholding) for dimensions; reserve heavy AI models only for complex, organic surface defects.</li>
+                                <li>Plan for Edge Cases: Factory floors introduce unexpected variables (e.g., vibrating parts, flipped components); code must include robust error handling and fail-safes.</li>
+                                <li>Data Quality Beats Quantity: For AI inspection, a small dataset of perfectly labeled, highly diverse defect images is far more valuable than thousands of redundant images.</li>
+                            <ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Lighting is 90% of the Battle: Proper illumination geometry (e.g., darkfield, coaxial) isolates the defect and minimizes ambient factory light interference, drastically simplifying software development.</li>
+                                <li>Over-Spec for the Environment: Industrial environments are harsh; always use IP67+ enclosures, fanless cooling, and robust brackets to combat dust, heat, and heavy machinery vibration.</li>
+                                <li>Match Resolution to Tolerance: Ensure your camera's spatial resolution (pixels per millimeter) leaves a safe margin (typically 3x to 10x) above the customer’s minimum defect tolerance..</li>
+                                <li>Global Shutters are Mandatory: Never use rolling shutters for moving production lines; global shutters are critical to prevent motion blur and geometric distortion on high-speed belts.</li>
+                            <ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Scope Creep is Costly: Clearly define "what a defect is" in the contract; without exact mathematical or visual boundaries, clients will continuously expand inspection requirements.</li>
+                                <li>Standardize to Scale: Reusing proven hardware architectures and modular software blocks across different projects cuts engineering hours and drastically lowers maintenance overhead.</li>
+                                <li>Feasibility Testing Saves Margins: Always conduct initial lab testing with real samples before signing a contract to prove the defect is actually detectable under production constraints.</li>
+                                <li>Documentation is the Product: Comprehensive bills of materials (BOMs), wiring diagrams, and user manuals reduce post-deployment support calls and ensure smooth factory handoffs.</li>
+                            <ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>Bridge the IT/OT Divide: Success requires close collaboration between the vision engineer (software/AI) and plant floor operators or PLC technicians (automation/hardware).</li>
+                                <li>Manage Client Expectations Early: Operators often expect 100% perfect inspection; educate them early on false-positive versus false-negative trade-offs to build trust.</li>
+                                <li>Cross-Functional Sync is Vital: Aligning early with procurement and vendors avoids costly supply chain delays and sudden component obsolescence during the build phase.</li>
+                                <li>Value Floor Feedback: The machine operators know the quirks of the production line best; their operational insights are invaluable for tuning the system's user interface and alert logic.</li>
+                            <ul>
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
+            <section id="bl-innovare" class="content-section"></section>
+                <div>
+                    <ul class="main-list"></ul>
+                        <h3>2. Senior Computer Vision & Machine Learning Research Scientist</h3>
+                        <p><a href="https://www.bl-innovare.com/">BL Innovare</a> | Markham, ON | Mar. 2024 – Aug. 2025 |</p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Senior Imaging & Computer Vision Engineer (Contract)</h3>
-                <p><a href="https://www.quartzimaging.com/">QUARTZ Imaging</a> | Vancouver, BC | Aug. 2023 – Feb. 2024 |</p>
-                <ul class="custom-indent">
-                    <li>Developed, evaluated and deployed conventional computer vision spipelines for semiconductor manufacturing Quality Assurance (QA) and Quality Control (QC), using Scanning Electron Microscopy (SEM) and Transmission Electron Microscopy (TEM) microscopic imagery, including:</li>
-                        <ul class="custom-indent">
-                                <li>Metrology and inspection of semiconductor components during manufacturing </li>
-                                <li>Ensuring that features are produced with sub-nanometer measurements precision.</li>
-                        </ul>
-                </ul>
-                
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
+
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>The business case for implementing BL-Innovare’s automated, touchless drive-through vehicle inspection platform, such as:
+                                    <ul>
+                                        <li>FASTLIGN: A touchless, drive-through system that scans wheel alignment and tire tread depth in seconds without stopping the vehicle. </li>
+                                        <li>BODYGUARD: An automated imaging system that captures 360-degree, high-resolution visual evidence of a vehicle's body to identify pre-existing damage. </li>
+                                        <li>These products involve digitizing the vehicle inspection process at automotive dealerships service centres and ensure return on investment (ROI) within short time.</li>
+                                </li>
+                            </ul>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
+
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            <ul>
+                                <li>The key technical challenges are lated to the following 3 factors:</li>
+                                    <ol>
+                                        <li>Data Acquisition:
+                                            <ul>
+                                                <li>Environmental Interference: Overcoming glaring sunlight, shifting shadows, and mud or rain obscuring the vehicle.</li>
+                                                <li>Dynamic Motion: Capturing precise laser and camera data from a moving car at varying speeds.</li>
+                                                <li>Target Diversity: Accurately scanning infinite variations of vehicle shapes, paint finishes, and rim designs.</li>
+                                            </ul>
+                                        <li>Data ProcessingUltra-Low Latency: </li>
+                                            <ul>
+                                                <li>Executing license plate recognition, AI body analysis, and alignment math in under three seconds.</li>
+                                                <li>Edge Architecture: Compressing and processing gigabytes of raw 4K data locally to avoid network bottlenecks.</li>
+                                                <li>Noise Filtering: Instantly separating actual vehicle damage and misalignment from temporary road debris or tire flexing.</li>
+                                            </ul>    
+                                        <li>Practical Inspection Results </li>
+                                            <ul>
+                                                <li>False-Positive Prevention: Ensuring dirt or water drops are not mistakenly flagged as scratches or dents.</li>
+                                                <li>OEM Benchmarking: Matching real-time measurements against an up-to-date, massive cloud database of factory specifications.</li>
+                                                <li>Actionable Reporting: Converting complex technical telemetry into simple, trust-building visual charts for regular drivers.</li>
+                                            </ul>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/bl-innovare.jpg" alt="Automobile Inspection - BL Innovare" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on developing, evaluating and deploying 
+                                    an end-to-end machine vision system for automobile exterior 
+                                    body inspection and detection of damage, scratches and dents, 
+                                    using high-resolution video data, including:</li>
                                 
-                            </td>
+                                <ul class="sub-list">
+                                    <li>Optical Imaging: Optimal selection of light sources, lenses/optics, sensors/cameras.</li>
+                                    <li>Image acquisition and pre-processing: Enhancing the quality of acquired digital imagery.</li>
+                                    <li>Vision processing unit: Developing computer vision pipelines and machine learning models.</li>
+                                    <li>Communication: Internal/external interfaces and result reporting, visualization and logging.</li>
+                                </ul>
+                            </ul>
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
-                <br>
+            <section id="quartz" class="content-section"></section>
+                <div>
+                    <h3>3. Senior Imaging & Computer Vision Engineer (Contract)</h3>
+                    <p><a href="https://www.quartzimaging.com/">QUARTZ Imaging</a> | Vancouver, BC | Aug. 2023 – Feb. 2024 |</p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Senior Vision & Machine Learning Engineer</h3>
-                <p><a href="https://koregeosystems.com/">KORE Geosystems</a> | Toronto, ON | Mar. 2022 – Feb. 2023 |</p>
-                <ul class="custom-indent">
-                    <li>Collaborated on developing, evaluating and deploying a machine vision system for mine core logging, using high-resolution optical imagery, including:</li>
-                        <ul class="custom-indent">
-                            <li>Improving the core imaging system by optimizing the selection of lighting, cameras, optics, and fine-tuning the ISP pipeline </li>
-                            <li>Core-imagery quality enhancement, core-box content segmentation, classification of core lithologies, minerals and alterations, ore-veins detection and quantification, detection and recognition of hand-written text annotations on core.</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/quartz-imaging.jpg" alt="Semiconductor Inspection - Quartz Imaging" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Developed, evaluated and deployed conventional computer vision spipelines for semiconductor manufacturing Quality Assurance (QA) and Quality Control (QC), using Scanning Electron Microscopy (SEM) and Transmission Electron Microscopy (TEM) microscopic imagery, including:</li>
+                                    <ul class="custom-indent">
+                                        <li>Metrology and inspection of semiconductor components during manufacturing </li>
+                                        <li>Ensuring that features are produced with sub-nanometer measurements precision.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
-                <br>
+            <section id="kore" class="content-section"></section>
+                <div>
+                    <h3>4. Senior Vision & Machine Learning Engineer</h3>
+                    <p><a href="https://koregeosystems.com/">KORE Geosystems</a> | Toronto, ON | Mar. 2022 – Feb. 2023 |</p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Machine Learning Engineer</h3>
-                <p><a href="https://www.terramera.com//">Terramera</a> | Vancouver, BC, Canada | Jul. 2021 – Feb. 2022 | </p>
-                <ul class="custom-indent">
-                    <li>Collaborated on the development, evaluation, and deployment of a machine vision system for plant-health and pesticide treatment application, using high resolution imagery, including:</li>
-                        <ul class="custom-indent">
-                            <li>Optimization of the robotic plant imaging system by fine-tuning the cameras, optics and lighting selection, the processing unit algorithms/models and the cameras ISP pipelines </li>
-                            <li>Plant disease and insect damage detection, quantification and monitoring</li>
-                            <li>Pesticide treatment benefits assessment.</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/kore-geosystem.png" alt="KORE Inspection - KORE Geosystem" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on developing, evaluating and deploying a machine vision system for mine core logging, using high-resolution optical imagery, including:</li>
+                                    <ul class="custom-indent">
+                                        <li>Improving the core imaging system by optimizing the selection of lighting, cameras, optics, and fine-tuning the ISP pipeline </li>
+                                        <li>Core-imagery quality enhancement, core-box content segmentation, classification of core lithologies, minerals and alterations, ore-veins detection and quantification, detection and recognition of hand-written text annotations on core.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
-                <br>
+            <section id="terramera" class="content-section"></section>
+                <div>
+                    <h3>5. Machine Learning Engineer</h3>
+                    <p><a href="https://www.terramera.com//">Terramera</a> | Vancouver, BC, Canada | Jul. 2021 – Feb. 2022 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Advanced Computer Vision Engineer</h3>
-                <p><a href="https://www.zebra.com/us/en.html/">Zebra Technologies</a> | Mississauga, ON | Jan. 2019 – Feb. 2021 | </p>
-                <ul class="custom-indent">
-                    <li>Collaborated on the development, evaluation, and deployment of a robotic machine vision system for retail store-shelves monitoring and analytics, including:</li>
-                        <ul class="custom-indent">
-                            <li>Data acquisition and pre-processing: Optimizing the selection of lighting/illumination, lens/optics, sensors/cameras </li>
-                            <li>Data pre-processing: Enhancing the quality of acquired digital imagery</li>
-                            <li>Robot navigation: Path planning, obstacle and people detection, face-masking, etc.</li>
-                            <li>Vision processing unit: Developing computer vision pipelines and machine learning models..</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/terramera.jpg" alt="Plant Health Inspection - Terramera" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on the development, evaluation, and deployment of a machine vision system for plant-health and pesticide treatment application, using high resolution imagery, including:</li>
+                                    <ul class="custom-indent">
+                                        <li>Optimization of the robotic plant imaging system by fine-tuning the cameras, optics and lighting selection, the processing unit algorithms/models and the cameras ISP pipelines </li>
+                                        <li>Plant disease and insect damage detection, quantification and monitoring</li>
+                                        <li>Pesticide treatment benefits assessment.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
-                <br>
+            <section id="zebra" class="content-section"></section>
+                <div>
+                    <h3>6. Advanced Computer Vision Engineer</h3>
+                    <p><a href="https://www.zebra.com/us/en.html/">Zebra Technologies</a> | Mississauga, ON | Jan. 2019 – Feb. 2021 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Machine Vision Research Engineer</h3>
-                <p><a href="https://www.flir.com/en-ca/">FLIR/Teledyne</a> | Richmond, BC | Aug. 2017 – Dec. 2018 | </p>
-                <ul class="custom-indent">
-                    <li>Collaborated on the development, testing, evaluation and integration of camera ISP algorithms and pipelines for mono, color and polarization industrial cameras and developed computer vision pipelines and deep learning models to demonstrate their industrial applications::</li>
-                        <ul class="custom-indent">
-                            <li>Developed real-time ISP modules to enhance sensor output for high-speed industrial imaging, ensuring high fidelity for machine vision tasks </li>
-                            <li>Calibrated and fine-tuned sensor parameters and ISP stages to achieve higher accuracy in varying lighting conditions for industrial environments</li>
-                            <li>Demonstrated camera performance for machine vision applications such as object detection, defect inspection, metrology and 3D reconstruction</li>
-                            <li>Integrated industrial cameras with computer vision libraries, SDKs and COTS to demonstrate solutions of complex automation for clients.</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/zebra.jpg" alt="Retail store shelves inspection - Zebra Technologies" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on the development, evaluation, and deployment of a robotic machine vision system for retail store-shelves monitoring and analytics, including:</li>
+                                    <ul class="custom-indent">
+                                    <li>Data acquisition and pre-processing: Optimizing the selection of lighting/illumination, lens/optics, sensors/cameras </li>
+                                    <li>Data pre-processing: Enhancing the quality of acquired digital imagery</li>
+                                    <li>Robot navigation: Path planning, obstacle and people detection, face-masking, etc.</li>
+                                    <li>Vision processing unit: Developing computer vision pipelines and machine learning models..</li>
+                                </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
+            <section id="flir" class="content-section"></section>
+                <div>
+                    <h3>7. Machine Vision Research Engineer</h3>
+                    <p><a href="https://www.flir.com/en-ca/">FLIR/Teledyne</a> | Richmond, BC | Aug. 2017 – Dec. 2018 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <br>
-                
-                <h3>Machine Learning Research Associate (Contract)</h3>
-                <p><a href="https://ohri.ca/en/">The Ottawa Hospital Research Institute (OHRI)</a> | University of Ottawa | Ottawa, ON | May 2016 – Jul 2017 | </p>
-                <ul class="custom-indent">
-                    <li>Researched and developed statistical and machine learning models for time-series forecasting and dimensionality reduction:</li>
-                        <ul class="custom-indent">
-                            <li>Developed, tested, evaluated and demonstrated statistical and machine learning forecasting models and software systems for forecasting chest tube air leak flow after lung surgery for chest tube management and predicting patient discharge time</li>
-                            <li>Developed dimensionality reduction algorithms for reducing computational complexity and redundancy in active learning in imbalanced machine learning problems.</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/flir.jpg" alt="Industrial Inspection Cameras - FLIR Machine Vision" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on the development, testing, evaluation and integration of camera ISP algorithms and pipelines for mono, color and polarization industrial cameras and developed computer vision pipelines and deep learning models to demonstrate their industrial applications::</li>
+                                    <ul class="custom-indent">
+                                        <li>Developed real-time ISP modules to enhance sensor output for high-speed industrial imaging, ensuring high fidelity for machine vision tasks </li>
+                                        <li>Calibrated and fine-tuned sensor parameters and ISP stages to achieve higher accuracy in varying lighting conditions for industrial environments</li>
+                                        <li>Demonstrated camera performance for machine vision applications such as object detection, defect inspection, metrology and 3D reconstruction</li>
+                                        <li>Integrated industrial cameras with computer vision libraries, SDKs and COTS to demonstrate solutions of complex automation for clients.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
+            <section id="ohri" class="content-section"></section>
+                <div>
+                    <h3>8. Machine Learning Research Associate (Contract)</h3>
+                    <p><a href="https://ohri.ca/en/">The Ottawa Hospital Research Institute (OHRI)</a> | University of Ottawa | Ottawa, ON | May 2016 – Jul 2017 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <br>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                <h3>Computer Vision Engineer</h3>
-                <p><a href="https://fitmyfoot.com/">FitMyFoot</a> | Vancouver, BC | Sep. 2015 – Apr. 2016 | </p>
-                <ul class="custom-indent">
-                    <li>Collaborated on the development, evaluation and deployment of a machine vision system for manufacturing custom-fit footwear products:</li>
-                        <ul class="custom-indent">
-                            <li>Developed, evaluated and deployed computer vision pipelines and machine learning models for detecting, measuring and 3D modeling of human feet from user-acquired smart phone feet imagery.</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img style='border:2px solid #080808c9' src="./assets/images/ohri.png" alt="Chest tube airflow prediction - OHRI" width="500">
+                        </td>
+                    </tr>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Researched and developed statistical and machine learning models for time-series forecasting and dimensionality reduction:</li>
+                                    <ul class="custom-indent">
+                                        <li>Developed, tested, evaluated and demonstrated statistical and machine learning forecasting models and software systems for forecasting chest tube air leak flow after lung surgery for chest tube management and predicting patient discharge time</li>
+                                        <li>Developed dimensionality reduction algorithms for reducing computational complexity and redundancy in active learning in imbalanced machine learning problems.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
-                <br>
+            <section id="wiiv" class="content-section"></section>
+                <div>
+                    <h3>9. Computer Vision Engineer</h3>
+                    <p><a href="https://fitmyfoot.com/">FitMyFoot</a> | Vancouver, BC | Sep. 2015 – Apr. 2016 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Research Analyst</h3>
-                <p><a href="https://mda.space/">MDA Space</a> | Richmond, BC, Canada | Sep. 2007 – Aug 2014 | </p>
-                <ul class="custom-indent">
-                    <li>Collaborated on many R&D projects focusing on processing and exploiting Synthetic Aperture Radar (SAR/InSAR) and optical satellite imagery as well as full-motion video and LiDAR data for various real-world civilian and security applications:</li>
-                        <ul class="custom-indent">
-                            <li>Change detection: Agricultural monitoring, vegetation and soil moisture maps</li>
-                            <li>Target detection: Ship-detection, crashed planes detection in the arctic, other security and military target detection and recognition</li>
-                            <li>Earth's surface deformation monitoring using InSAR: Monitoring of infrastructures, bridges, buildings, roads, airport runways, landslides, mining sites, etc.</li>
-                            <li>Developing hybrid solutions using SAR and Optical satellite data fusion.</li>
-                            <li>Ful-motion video data exploitation: Mosaicking, 3D reconstruction, target detection, change detection, mission planning, etc.</li>
-                        </ul>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/fitmyfoot.jpg" alt="Custom wearables - FitMyFoot" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on the development, evaluation and deployment of a machine vision system for manufacturing custom-fit footwear products:</li>
+                                    <ul class="custom-indent">
+                                        <li>Developed, evaluated and deployed computer vision pipelines and machine learning models for detecting, measuring and 3D modeling of human feet from user-acquired smart phone feet imagery.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
-                <br>
+            <section id="mda" class="content-section"></section>
+                <div>
+                    <h3>10. Research Analyst</h3>
+                    <p><a href="https://mda.space/">MDA Space</a> | Richmond, BC, Canada | Sep. 2007 – Aug 2014 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
-                <h3>Post-Doctorate Research Fellow</h3>
-                <p><a href="https://ece.ubc.ca/">UBC - Electrical & Computer Engineering</a> | Vancouver, BC, Canada | Sept. 2004 –  Aug. 2007 | </p>
-                <ul class="custom-indent">
-                    <li>Researched, developed and published computer vision systems for detecting and quantifying multiple-sclorosis lesions from brain MRI imaging.</li>
-                </ul>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>Conventional Computer Vision</th>
-                            <th>Machine/Deep Learning</th>
-                            <th>Software Development</th>
-                            <th>Machine Vision Hardware Design</th>
-                            <th>STAR Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Skills">
-                                
-                            </td>
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
-                            <td data-label="Skills">
-                                
-                            </td>
-                        </tr>
-                    </tbody>
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/mda.jpg" alt="Remote sensing - MDA Space" width="500">
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Collaborated on many R&D projects focusing on processing and exploiting Synthetic Aperture Radar (SAR/InSAR) and optical satellite imagery as well as full-motion video and LiDAR data for various real-world civilian and security applications:</li>
+                                    <ul class="custom-indent">
+                                        <li>Change detection: Agricultural monitoring, vegetation and soil moisture maps</li>
+                                        <li>Target detection: Ship-detection, crashed planes detection in the arctic, other security and military target detection and recognition</li>
+                                        <li>Earth's surface deformation monitoring using InSAR: Monitoring of infrastructures, bridges, buildings, roads, airport runways, landslides, mining sites, etc.</li>
+                                        <li>Developing hybrid solutions using SAR and Optical satellite data fusion.</li>
+                                        <li>Ful-motion video data exploitation: Mosaicking, 3D reconstruction, target detection, change detection, mission planning, etc.</li>
+                                    </ul>
+                            </ul>
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
                 </table>
+            </section>
+            <br>
 
+            <section id="ubc" class="content-section"></section>
+                <div>
+                    <h3>11. Post-Doctorate Research Fellow</h3>
+                    <p><a href="https://ece.ubc.ca/">UBC - Electrical & Computer Engineering</a> | Vancouver, BC, Canada | Sept. 2004 –  Aug. 2007 | </p>
+                </div>
+                <table class="tech-spec-table">
+                    <!-- 
+                    GLOBAL GRID LAYOUT DEFINITION (5-Column Matrix)
+                    Re-allocated percentages to make the title headers very narrow 
+                    -->
+                    <colgroup>
+                        <col style="width: 6%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 5%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 10%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 5%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                        <col style="width: 10%;">  <!-- Column 1: Main Row Titles (Narrowed from 15%) -->
+                        <col style="width: 7%;"> <!-- Column 2: "Algorithms" title cell -->
+                        <col style="width: 17%;"> <!-- Column 3: "Implemented" block for Algorithms (Expanded) -->
+                        <col style="width: 5%;"> <!-- Column 4: "Software" title cell -->
+                        <col style="width: 17%;"> <!-- Column 5: "Implemented" block for Software / Image (Expanded) -->
+                    </colgroup>
 
+                    <!-- Row 1: Content Row -->
+                    <tr>
+                        <!-- Left Title: Takes up Column 1 -->
+                        <td colspan="1" class="row-header" style="text-align: left; vertical-align: center;">
+                            Company
+                        </td>
 
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Business Case
+                        </td>
 
+                        <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
 
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Technical Challenges
+                        </td>
 
+                            <!-- Main Bulleted Content: Stretches across Columns 2, 3, and 4 (10% + 35% + 10% = 55% Total Width) -->
+                        <td colspan="3" style="text-align: left; vertical-align: top;">
+                            
+                        </td>
+                        <!-- Right Image Column: Takes up Column 5 (37% Total Width) -->
+                        <td colspan="3" style="text-align: center; vertical-align: middle;">
+                            <img src="./assets/images/ubc.jpg" alt="Multiple Sclerosis detection from brain MRI - UBC - MS-MRI" width="500">
+                        </td>
+                    </tr>
 
+                    <!-- Row 2: Sub-Technical Split Row -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            MY ROLE & CONTRIBUTIONS<br>
+                        </td>
 
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ROLE
+                        </td>
 
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            <ul class="custom-indent">
+                                <li>Researched, developed and published computer vision systems for detecting and quantifying multiple-sclorosis lesions from brain MRI imaging.</li>
+                            </ul>
+                        </td>
 
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Conventional Computer Vision 
+                        </td>
 
-            </div>
-            
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            AI / ML / DL 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            Software 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 3: START Example -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            STAR EXAMPLE<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            SITUATION
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TASK 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            ACCOMPLISHMENT 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            RESULTS 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+
+                    <!-- Row 4: Lessons Learned -->
+                    <tr>
+                        <!-- Left Title: Text will wrap naturally to keep the column narrow -->
+                        <td colspan="1" class="row-header" style="text-align: left; line-height: 1.3;">
+                            LESSONS LEARNED<br>
+                        </td>
+
+                        <!-- Algorithms Title: Occupies Column 2 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            TECHNICAL
+                        </td>
+
+                        <!-- Algorithms Text Content: Occupies Column 3 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            HARDWARE 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="2" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            COMPANY 
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+
+                        <!-- Software Title: Occupies Column 4 -->
+                        <td colspan="1" class="section-title" style="text-align: center;">
+                            PEOPLE
+                        </td>
+
+                        <!-- Software Text Content: Occupies Column 5 -->
+                        <td colspan="1" style="text-align: left;">
+                            Implemented
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <br>
+            <br>
         </section>
     </main>
     <br>

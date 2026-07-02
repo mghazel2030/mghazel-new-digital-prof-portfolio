@@ -21,14 +21,14 @@
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="./assets/images/my-e-portfolio-logo.jpg" width = "200px" alt="Digital Portfolio">
+                    <img style='border:2px solid #3009f0 ; border-radius: 15px;' src="./assets/images/my-e-portfolio-logo.jpg" width = "300px" alt="Digital Portfolio">
                 </a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="career.html">Experience</a></li>
-                <li><a href="github-projects.html">GitHub Open Source Projects</a></li>
+                <li><a href="education.html">University Education</a></li>
+                <li><a href="career.html">Work Experience</a></li>
+                <li><a href="github-projects.html">GitHub Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="prof-dev.html">Professional Development</a></li>
                 <li><a href="career-reflections.html">Career Reflections</a></li>
@@ -39,40 +39,35 @@
     </header>
 
     <main>
-        <section>
+        <section class="contact-section">
             <h1>Contact</h1>
-            <br>
-            <!----------------------------------------------------------->
-            <!-- I used Bootstrap Forms Styles utilities for my Contact Form  -->
-            <!----------------------------------------------------------->
-            <div class="container mt-5">
-                <div class="card shadow-sm p-4">
-                    <h2 class="text-center mb-4">Message Me</h2>
+            
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <h2>Message Me</h2>
 
-                    <form>
-                    <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control">
-                    </div>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" class="form-input" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control">
-                    </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="4"></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-input" rows="4" required></textarea>
+                        </div>
 
-                    <button type="submit" class="btn btn-primary w-100">
-                        Send Message
-                    </button>
+                        <button type="submit" class="form-submit-btn">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
-            <br>
-            <br>
         </section>
     </main>
     <br>

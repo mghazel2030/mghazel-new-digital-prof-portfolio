@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GitHub Open Source Projects | Mohsen Ghazel</title>
+    <title>GitHub Projects | Mohsen Ghazel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +22,14 @@
         <nav>
             <div class="logo">
                 <a href="/">
-                    <img src="./assets/images/my-e-portfolio-logo.jpg" width = "200px" alt="Digital Portfolio">
+                    <img style='border:2px solid #3009f0 ; border-radius: 15px;' src="./assets/images/my-e-portfolio-logo.jpg" width = "300px" alt="Digital Portfolio">
                 </a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="career.html">Experience</a></li>
-                <li><a href="github-projects.html"  class="active">GitHub Open Source Projects</a></li>
+                <li><a href="education.html">University Education</a></li>
+                <li><a href="career.html">Work Experience</a></li>
+                <li><a href="github-projects.html" class="active">GitHub Projects</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="prof-dev.html">Professional Development</a></li>
                 <li><a href="career-reflections.html">Career Reflections</a></li>
@@ -38,11 +38,25 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <section>
-            <h1>Computer Vision</h1>
-            <br>
+        <br>
+        <br>
+        <!-- Put this right before your first section -->
+        <nav id="toc-container">
+            <div class="toc-header">Table of Contents</div>
+            <ul class="toc-list">
+                <li><a href="#computer-vision"><span class="toc-num">1.</span> Computer Vision</a></li>
+                <li><a href="#nlp"><span class="toc-num">2.</span> Natural Language Processing</a></li>
+                <li><a href="#software-web-dev"><span class="toc-num">3.</span> Software & Web Development</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <h1>GitHub Projects & Contributions</h1>
+        <hl>
+        <br>
+        <section id="computer-vision" class="content-section">
+            <h3>1. Computer Vision</h3>
             <div>
                 <table class="modern-table">
                     <thead>
@@ -271,10 +285,9 @@
                 </table>
             </div>
         </section>
-
-        <section>
-            <h1>Natural Language Processing Projects</h1>
-            <br>
+        <br>
+        <section id="nlp" class="content-section">
+            <h3>2. Natural Language Processing</h3>
             <div>
                 <table class="modern-table">
                     <thead>
@@ -302,65 +315,156 @@
                 </table>
             </div>
         </section>
-
-        <section>
-            <h1>Software Development:</h1>
-            <br>
-            <div>
-                <table class="modern-table">
+        <br>
+        <section id="software-web-dev" class="content-section">
+            <h3>3. Software & Web Development</h3>
+            <table class="modern-table">
                     <thead>
                         <tr>
                             <th>#</th>
                             <th>Project</th>
                             <th>Description</th>
+                            <th>Illustration</th>
+                            <th>GitHub Link</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td data-label="#">1</td>
-                            <td data-label="Project"></td>
-                            <td data-label="Description"></td>
-                            <td data-label="GitHub Link"></td>
-                            <tr>
-                            <td data-label="#">2</td>
-                            <td data-label="Project"></td>
-                            <td data-label="Description"></td>
-                            <td data-label="GitHub Link"></td>
+                            <td data-label="Project">Note taking App</td>
+                            <td data-label="Description">
+                                <ul>
+                                    <li>This is my implementation of the Note Taking & Management App, using:</li>
+                                        <ul>
+                                            <li>A modular MVC-style Express application using EJS views</li>
+                                            <li>Partials</li>
+                                            <li>Mongoose models</li>
+                                            <li>Controllers</li>
+                                            <li>Routes</li>
+                                            <li>Middleware</li>
+                                            <li>Public assets, and </li>
+                                            <li>Development-only automated tests.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            
+                            <td data-label="Illustration" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/note-taking-app.png" alt="Note Taking App" width="400" style='border:1px solid #000000'></center>
+                            </td>
+                            <td data-label="GitHub Link"><a href="https://github.com/mghazel2030/mghazel--midterm-assign-03--note-taking-app">View on GitHub</a></td>
                         </tr>
+
+                        <tr>
+                            <td data-label="#">2</td>
+                            <td data-label="Project">JavaScript-OpenCV Computer Vision App</td>
+                            <td data-label="Description">
+                                <ul>
+                                    <li>This is my implementation of a JavaScript-OpenCV Computer Vision App showcasing interactive:</li>
+                                        <ul>
+                                            <li>JavaScript programming<li>
+                                            <li>Computer vision and image processing algorithms using OpenCV-JavaScript</li>
+                                            <li>Asynchronous JavaScript </li>
+                                            <li>JSON, AJAX and Fetch API </li>
+                                            <li>Real-time data visualization </li>
+                                            <li>UI/UX design.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Illustration" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/opencv-js-cv.png" alt="OpenCV-CV Computer Vision App." width="400" style='border:1px solid #000000'></center>
+                            </td>
+                            <td data-label="GitHub Link"><a href="https://github.com/mghazel2030/mghazel--cv-js-opencv-toolbox-app">View on GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="#">3</td>
+                            <td data-label="Project">Weather Forecasting App</td>
+                            <td data-label="Description">
+                                <ul>
+                                    <li>This is my implementation of a Weather Forecast App showcasing interactive:</li>
+                                        <ul>
+                                            <li>JavaScript programming<li>
+                                            <li>Asynchronous JavaScript </li>
+                                            <li>JSON, AJAX and Fetch API </li>
+                                            <li>Real-time data visualization </li>
+                                            <li>UI/UX design.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Illustration" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/opencv-js-cv.png" alt="Weather Forecast App." width="400" style='border:1px solid #000000'></center>
+                            </td>
+                            <td data-label="GitHub Link"><a href="https://github.com/mghazel2030/mghazel--weather-forecast-app">View on GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="#">4</td>
+                            <td data-label="Project">To-Do-List App</td>
+                            <td data-label="Description">
+                                <ul>
+                                    <li>This is my implementation of a To-Do-List App showcasing interactive:</li>
+                                        <ul>
+                                            <li>JavaScript programming<li>
+                                            <li>Asynchronous JavaScript </li>
+                                            <li>JSON, AJAX and Fetch API </li>
+                                            <li>Real-time data visualization </li>
+                                            <li>UI/UX design.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Illustration" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/opencv-js-cv.png" alt="To-Do-List App." width="400" style='border:1px solid #000000'></center>
+                            </td>
+                            <td data-label="GitHub Link"><a href="https://github.com/mghazel2030/mghazel--to-do-list-app">View on GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="#">5</td>
+                            <td data-label="Project">Rock-Scissors-Paper App</td>
+                            <td data-label="Description">
+                                <ul>
+                                    <li>This is my implementation of a Rock-Scissors-Paper App showcasing interactive:</li>
+                                        <ul>
+                                            <li>JavaScript programming<li>
+                                            <li>Asynchronous JavaScript </li>
+                                            <li>JSON, AJAX and Fetch API </li>
+                                            <li>Real-time data visualization </li>
+                                            <li>UI/UX design.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Illustration" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/opencv-js-cv.png" alt="Rock-Scissors-Paper App." width="400" style='border:1px solid #000000'></center>
+                            </td>
+                            <td data-label="GitHub Link"><a href="https://github.com/mghazel2030/mghazel--rock-scisors-rock-app">View on GitHub</a></td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="#">6</td>
+                            <td data-label="Project">Live-Transit App</td>
+                            <td data-label="Description">
+                                <ul>
+                                    <li>This is my implementation of a Live-Transit App showcasing interactive:</li>
+                                        <ul>
+                                            <li>JavaScript programming<li>
+                                            <li>Asynchronous JavaScript </li>
+                                            <li>JSON, AJAX and Fetch API </li>
+                                            <li>Real-time data visualization </li>
+                                            <li>UI/UX design.</li>
+                                        </ul>
+                                </ul>
+                            </td>
+                            <td data-label="Illustration" rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 400px;"> 
+                                <center><img src="./assets/images/opencv-js-cv.png" alt="Live-Transit-App." width="400" style='border:1px solid #000000'></center>
+                            </td>
+                            <td data-label="GitHub Link"><a href="https://github.com/mghazel2030/mghazel--live-transit-app">View on GitHub</a></td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
         </section>
-
-        <section>
-            <h1>Web Development:</h1>
-            <br>
-            <div>
-                <table class="modern-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Project</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="#">1</td>
-                            <td data-label="Project"></td>
-                            <td data-label="Description"></td>
-                            <td data-label="GitHub Link"></td>
-                            <tr>
-                            <td data-label="#">2</td>
-                            <td data-label="Project"></td>
-                            <td data-label="Description"></td>
-                            <td data-label="GitHub Link"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
+        <br>
     </main>
     <br>
     <br>
